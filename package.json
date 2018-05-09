@@ -1,0 +1,21 @@
+{
+  "name": "simplebtn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dennis Christoffersen",
+  "license": "ISC",
+  "dependencies": {
+    "human-readable-time": "^0.3.0",
+    "johnny-five": "^0.14.1",
+    "lodash": "^4.17.5",
+    "onoff": "^2.0.0",
+    "primus": "^7.1.1",
+    "raspi-io": "^8.1.0",
+    "rpi-gpio-buttons": "^1.0.4",
+    "ws": "^5.1.0"
+  }
+}
