@@ -36,6 +36,12 @@ client.on('open', () =>{
 	console.log(" ##%%%%%%### PrimusFactory.js > SOCKET OPEN  ");
 });
 
+client.on('reconnect', function (opts) {
+  console.log('Reconnection attempt started = ', opts.attempt );
+});
+
+
+
 
 
 function trigger(){
@@ -83,8 +89,12 @@ function unexportOnClose() {
 	//LED.writeSync(0); // Turn LED off
 	//LED.unexport(); //
 	pushButton.unexport();
-
 };
 
 
 process.on('SIGINT', unexportOnClose);
+
+
+console.log("---------------------------")
+console.log("CONNECTING TO SERVER ")
+console.log("")
